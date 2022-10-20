@@ -1,0 +1,907 @@
+<head>
+
+
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+        img {
+            max-width: 600px;
+
+            outline: none;
+
+            text-decoration: none;
+
+            -ms-interpolation-mode: bicubic;
+
+        }
+
+
+        a img {
+
+
+
+            border: none;
+
+
+
+        }
+
+
+        table {
+
+
+
+            border-collapse: collapse !important;
+
+
+
+        }
+
+
+        #outlook a {
+
+            padding: 0;
+
+        }
+
+
+        .ReadMsgBody {
+
+            width: 100%;
+
+        }
+
+        .ExternalClass {
+            width: 100%;
+
+        }
+
+        .backgroundTable {
+
+
+
+            margin: 0 auto;
+
+
+
+            padding: 0;
+
+
+
+            width: 100% !important;
+
+
+
+        }
+
+
+
+
+
+
+
+        table td {
+
+
+
+            border-collapse: collapse;
+
+
+
+        }
+
+
+
+
+
+
+
+        .ExternalClass * {
+
+
+
+            line-height: 115%;
+
+
+
+        }
+
+
+
+
+
+
+
+        .container-for-gmail-android {
+
+
+
+            min-width: 600px;
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+        /* General styling */
+
+
+
+        * {
+
+
+
+            font-family: Open sans, Arial sans-serif;
+
+
+
+        }
+
+
+
+
+
+
+
+        body {
+
+
+
+            -webkit-font-smoothing: antialiased;
+
+
+
+            -webkit-text-size-adjust: none;
+
+
+
+            width: 100% !important;
+
+
+
+            margin: 0 !important;
+
+
+
+            height: 100%;
+
+
+
+            color: #676767;
+
+
+
+        }
+
+
+
+
+
+
+
+        td {
+
+
+
+            font-family: Open sans, Arial, sans-serif;
+
+
+
+            font-size: 14px;
+
+
+
+            color: #777777;
+
+
+
+            text-align: center;
+
+
+
+            line-height: 21px;
+
+
+
+        }
+
+
+
+
+
+
+
+        a {
+
+
+
+            text-decoration: none !important;
+
+
+
+        }
+
+
+
+
+
+
+
+        .header-lg,
+
+
+
+        .header-md {
+
+
+
+            font-size: 28px;
+
+
+
+            font-weight: 700;
+
+
+
+            line-height: normal;
+
+
+
+            padding: 60px 0 30px;
+
+
+
+            color: #00bcd4;
+
+
+
+            border-top: 2px solid #ffffff !important;
+
+
+
+        }
+
+
+
+
+
+
+
+        .content-padding {
+
+
+
+            padding: 20px 0 30px;
+
+
+
+        }
+
+
+
+
+
+
+
+        .mobile-header-padding-left {
+
+
+
+            width: 100%;
+
+
+
+            text-align: center;
+
+
+
+            padding-left: 10px;
+
+
+
+        }
+
+
+
+
+
+
+
+        .free-text {
+
+
+
+            width: 100% !important;
+
+
+
+            padding: 10px 6px 20px;
+
+
+
+        }
+
+
+
+        .free-text a {
+
+
+
+            color: #1976d2;
+
+
+
+            text-transform: uppercase;
+
+
+
+            font-weight: bold;
+
+
+
+        }
+
+
+
+        .free-text a:hover {
+
+
+
+            color: #00bcd4;
+
+
+
+            background-color: transparent;
+        }
+
+
+
+
+
+
+
+
+
+
+
+        .free-text-small {
+
+
+
+            width: 100% !important;
+
+
+
+            padding: 30px 0 0px;
+
+
+
+            font-size: 12px !important;
+
+
+
+        }
+
+
+
+
+
+
+
+        .force-width-gmail {
+
+
+
+            min-width: 600px;
+
+
+
+            height: 0px !important;
+
+
+
+            line-height: 1px !important;
+
+
+
+            font-size: 1px !important;
+        }
+
+
+
+
+
+
+
+        .button a:hover {
+
+
+
+            background-color: #00bcd4 !important;
+
+
+
+        }
+
+
+
+
+
+
+
+        .free-text-small a,
+        .free-text a {
+
+
+
+            color: #1976d2 !important;
+
+
+
+        }
+
+
+
+        .free-text-small a:hover,
+        .free-text a:hover {
+
+
+
+            background-color: transparent !important;
+
+
+
+        }
+        .image {
+            
+            flex-basis: 30px;
+            width: 100px;
+            padding-right: 50px; 
+            padding-bottom:60px; 
+        }
+    </style>
+
+
+
+
+
+
+
+    <style type="text/css" media="screen">
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+    </style>
+
+
+
+
+
+
+
+    <style type="text/css" media="screen">
+        @media screen {
+
+
+
+            /* Thanks Outlook 2013! */
+
+
+
+            * {
+
+
+
+                font-family: 'Open sans', 'Arial', 'sans-serif' !important;
+
+
+
+            }
+
+
+
+        }
+    </style>
+
+
+
+
+
+
+
+    <style type="text/css" media="only screen and (max-width: 480px)">
+        /* Mobile styles */
+
+
+
+        @media only screen and (max-width: 480px) {
+
+
+
+
+
+
+
+            table[class*="container-for-gmail-android"] {
+
+
+
+                min-width: 290px !important;
+
+
+
+                width: 100% !important;
+
+
+
+            }
+
+
+
+
+
+
+
+            table[class="w320"] {
+
+
+
+                width: 320px !important;
+
+
+
+            }
+
+
+
+
+
+
+
+            img[class="force-width-gmail"] {
+
+
+
+                display: none !important;
+
+
+
+                width: 0 !important;
+
+
+
+                height: 0 !important;
+
+
+
+            }
+
+
+
+
+
+
+
+            a[class="button-mobile"] {
+
+
+
+                width: 248px !important;
+
+
+
+            }
+
+
+
+
+
+
+
+            td[class*="mobile-header-padding-left"] {
+
+
+
+                width: 160px !important;
+
+
+
+                padding-left: 0 !important;
+
+
+
+            }
+
+
+
+
+
+
+
+            td[class="header-lg"] {
+
+
+
+                font-size: 24px !important;
+
+
+
+                padding-bottom: 5px !important;
+
+
+
+            }
+
+
+
+
+
+
+
+            td[class="content-padding"] {
+
+
+
+                padding: 5px 0 30px !important;
+
+
+
+            }
+
+
+
+
+
+
+
+            td[class="button"] {
+
+
+
+                padding: 5px !important;
+
+
+
+            }
+
+
+
+
+
+
+
+            td[class*="free-text"] {
+
+
+
+                padding: 10px 18px 30px !important;
+
+
+
+            }
+
+
+
+        }
+    </style>
+
+
+
+</head>
+
+
+
+
+
+
+
+<body bgcolor="#f7f7f7">
+
+
+
+    <table align="center" cellpadding="0" cellspacing="0" class="container-for-gmail-android" width="100%">
+
+
+
+        <tr>
+
+
+
+            <td align="center" valign="top" width="100%" style="background-color: #f7f7f7;padding: 40px 0 30px;">
+
+
+
+                <center>
+
+
+
+                    <table cellspacing="0" cellpadding="0" width="600" class="w320 button">
+
+
+
+                        <tr>
+
+
+
+                            <td>
+
+
+
+                                <img width="180" height="50"
+                                    src=http://s1sites.s1cloud.net/s1docs/templates/go-branding.png
+                                    style="margin-bottom:40px;">
+
+
+
+                            </td>
+
+
+
+                        </tr>
+                        <td>
+                            Σε ευχαριστούμε που εμπιστεύεσαι την εφαρμογή μας! <br><br>
+                        </td>
+                        <tr>
+                           
+                        </tr>
+                     </table>
+                            
+                     <table cellspacing="0" cellpadding="0" width="600" class="w320 button"> 
+                        <tr>
+
+                            
+                           
+                            <td class="free-text ">
+
+                                 
+
+                             
+
+                                Η λειτουργία του <b>Prosvasis Go</b> έληξε σήμερα! Στην περίπτωση που επιθυμείς να
+                                αποκτήσεις το Prosvasis Go ή να ανανεώσεις τη συνδρομή σου, επικοινώνησε με τον
+                                συνεργάτη της Prosvasis. Σε διαφορετική περίπτωση τις επόμενες ημέρες είναι πιθανόν τα
+                                δεδομένα της βάσης σου να διαγραφούν βάσει του χρονικού διαστήματος που αναφέρεται στους
+                                όρους χρήσης. Δείτε <a
+                                    href="https://go.prosvasis.com/%ce%bf%cf%81%ce%bf%ce%b9-%cf%87%cf%81%ce%b7%cf%83%ce%b7%cf%83/">εδώ</a>
+                                τους όρους χρήσης. <br><br>
+
+                               
+
+
+                            </td>
+                            <td>
+
+                                <img class="image" src="img/0_days_left.png">
+                            </td>
+                           
+                          
+
+                        
+
+                        </tr>
+                         
+                        <table cellspacing="0" cellpadding="0" width="600" class="w320 button">
+                        <tr>
+                            <td>
+                                <p>Στοιχεία συνεργάτη
+                                    <p>
+    
+                                    <p>Επωνυμία συνεργάτη: @{items('Apply_to_each')['partnerName']}
+                                    <p>
+    
+                                    <p>Τηλέφωνο επικοινωνίας: @{items('Apply_to_each')['partnerPhone']}
+                                    <p>
+    
+                                    <p>Email: @{items('Apply_to_each')['partnerEmail']}
+                                    <p>
+    
+                                        Να θυμάσαι ανά πάσα στιγμή είμαστε δίπλα σου! <br><br>
+    
+                                        Η ομάδα του <b>Prosvasis GO</b><br><br>
+                                    
+                            </td>
+                           </tr>
+                      </table>
+
+
+
+
+
+
+
+                    </table>
+
+
+
+                </center>
+
+
+
+            </td>
+
+
+
+        </tr>
+
+
+
+        <tr>
+
+
+
+            <td align="center" valign="top" width="100%" style="background-color: #f7f7f7; height: 100px;">
+
+
+
+                <center>
+
+
+
+                    <table cellspacing="0" cellpadding="0" width="600" class="w320"
+                        style="border-top:2px solid #ffffff;">
+
+
+
+                        <tr>
+
+
+
+                            <td style="padding: 50px 0 25px;font-size:12px;">
+
+
+
+                                <a href=https://go.prosvasis.com /><img width="133" height="26"
+                                    src=http://s1sites.s1cloud.net/s1docs/templates/prosvasis-logo.png
+                                    alt="softone"></a><br /><br />
+
+
+
+                                Αχιλλέως 8 & Λάμπρου Κατσώνη <br />
+
+
+
+                                Καλλιθέα - 17164, Αθήνα <br /> 2103322700 - gosupport@prosvasis.com
+
+
+
+                            </td>
+
+
+
+                        </tr>
+
+
+
+                    </table>
+
+
+
+                </center>
+
+
+
+            </td>
+
+
+
+        </tr>
+
+
+
+    </table>
+
+
+
+</body>
+
+
+
+</html>
