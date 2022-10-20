@@ -95,7 +95,7 @@
 
         .free-text {
             width: 100% !important;
-            padding: 10px 6px 20px;
+            padding: 10px 40px 50px;
         }
 
         .free-text a {
@@ -134,13 +134,6 @@
         .free-text-small a:hover,
         .free-text a:hover {
             background-color: transparent !important;
-        }
-
-        .image {
-            flex-basis: 30px;
-            width: 100px;
-            padding-right: 50px;
-            padding-bottom: 60px;
         }
     </style>
     <style type="text/css" media="screen">
@@ -199,6 +192,13 @@
                 padding: 10px 18px 30px !important;
             }
         }
+
+        .image {
+            flex-basis: 30px;
+            width: 100px;
+            padding-right: 50px;
+            padding-bottom: 60px;
+        }
     </style>
 </head>
 
@@ -215,38 +215,59 @@
                                     style="margin-bottom:40px;">
                             </td>
                         </tr>
-                       
                     </table>
                     <table cellspacing="0" cellpadding="0" width="600" class="w320 button">
                         <tr>
-                            <td class="free-text ">
-                                 Η αντίστροφη μέτρηση ξεκίνησε…2 ημέρες έμειναν ακόμη!<br><br>
-
-
-                                Για να συνεχίσεις να χρησιμοποιείς το
-                                Prosvasis GO  <b>καθώς και να διατηρήσεις τα δεδομένα της βάσης σου</b>, επικοινώνησε με τον
-                                συνεργάτη της  Prosvasis!
-                            </td>
                             <td>
-                                <img class="image" src="img/2_days_left.png"style="padding-top: 30;">
+                                <img class="image" src="img/1_day_left.png" style="width: 115;">
+                            </td>
+                            <td class="free-text">
+                                Σε ευχαριστούμε που εμπιστεύεσαι την εφαρμογή μας! <br><br>
                             </td>
                         </tr>
-                        <table cellspacing="0" cellpadding="0" width="600" class="w320 button">
-                            <tr>
-                                <td class="free-text">
-                                    <p><u>Στοιχεία συνεργάτη</u>
-                                    <p>
-                                    <p>Επωνυμία συνεργάτη: @{items('Apply_to_each')['partnerName']}
-                                    <p>
-                                    <p>Τηλέφωνο επικοινωνίας: @{items('Apply_to_each')['partnerPhone']}
-                                    <p>
-                                    <p>Email: @{items('Apply_to_each')['partnerEmail']}
-                                    <p>
-                                        Να θυμάσαι ανά πάσα στιγμή είμαστε δίπλα σου! <br><br>
-                                        Η ομάδα του <b>Prosvasis GO</b><br><br>
-                                </td>
-                            </tr>
-                        </table>
+                    </table>
+                    <table cellspacing="0" cellpadding="0" width="600" class="w320 button">
+                        <tr>
+                            <td class="free-text">
+                                Έχεις ακόμα 1 ημέρα χρήσης! Στην περίπτωση που επιθυμείς σήμερα να αποκτήσεις το
+                                <b>Prosvasis Go</b> ή να ανανεώσεις τη συνδρομή σου, η αξία ανανέωσης της συνδρομής σου
+                                είναι <b> @{items('Apply_to_each')['payable']}€ </b>(εμπεριέχεται και ο Φ.Π.Α) <p>
+                                <p>
+                                    Για την ανανέωση, σου παραθέτουμε παρακάτω τους τρόπους πληρωμής της συνδρομής σου.
+                                    Σε διαφορετική περίπτωση τις επόμενες ημέρες είναι πιθανόν τα δεδομένα της βάσης σου
+                                    να διαγραφούν βάσει του χρονικού διαστήματος που αναφέρεται στους όρους χρήσης.
+                                    Δείτε <a
+                                        href="https://go.prosvasis.com/%ce%bf%cf%81%ce%bf%ce%b9-%cf%87%cf%81%ce%b7%cf%83%ce%b7%cf%83/">εδώ</a>
+                                    τους όρους χρήσης.
+                                <p><b>• Με κωδικό ηλεκτρονικής πληρωμής </b>
+                                <p>
+                                <p><b>ΚΩΔΙΚΟΣ ΠΛΗΡΩΜΗΣ </b>
+                                    <input type="text" id="fname" name="fname" style="background-color:#fdfdfd"><br><br>
+                                <p>
+                                <p><b>• Με πιστωτική/χρεωστική κάρτα</b>
+                                <p>
+                                <p>
+                                    <img class="image" src="img/credit_cards.png" style="width:300;">
+                                <p>
+                                <p><b>• Με την υπηρεσία OnePay</b>
+                                <p>
+                                <p>Επέλεξε την υπηρεσία για εύκολη, γρήγορη και με ασφάλεια πληρωμή της συνδρομής σου,
+                                    χρησιμοποιώντας μόνο τον κωδικό (RF) που αναγράφεται στο τιμολόγιο.
+                                <p>
+                                <p><b>• Με κατάθεση στους τραπεζικούς μας λογαριασμούς:</b>
+                                <p>
+                                <p>
+                                    EUROBANK <br> IBAN: GR8702601800000950200104470 (PROSVASIS AEBE) <br><br>
+                                    ΕΘΝΙΚΗ ΤΡΑΠΕΖΑ <br> IBAN: GR7601101220000012247022127 (PROSVASIS AEBE)<br><br>
+                                    ΤΡΑΠΕΖΑ ΠΕΙΡΑΙΩΣ <br> IBAN: GR3801715610006561106971998 (PROSVASIS AEBE) <br><br>
+                                    ALPHA BANK <br> IBAN: GR1901401370137002002014155 (PROSVASIS AEBE)<br><br><br>
+                                    ΠΡΟΣΟΧΗ! <br><br>
+                                    <b>Απαραίτητη προϋπόθεση</b>, η συμπλήρωση <br>της <b>επωνυμίας</b> και του
+                                    <b>Α.Φ.Μ.</b> <br><br>
+                                    Να θυμάσαι ανά πάσα στιγμή είμαστε δίπλα σου! <br><br>
+                                    Η ομάδα του <b>Prosvasis GO</b>
+                            </td>
+                        </tr>
                     </table>
                 </center>
             </td>
