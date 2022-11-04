@@ -95,7 +95,7 @@
 
       .free-text {
          width: 100% !important;
-         padding: 10px 4px 50px;
+         padding: 10px 4px 0px;
       }
 
       .free-text a {
@@ -122,9 +122,9 @@
          font-size: 1px !important;
       }
 
-      .button a:hover {
+      /* .button a:hover {
          background-color: #00bcd4 !important;
-      }
+      } */
 
       .free-text-small a,
       .free-text a {
@@ -214,45 +214,60 @@
                            style="margin-bottom:40px;">
                      </td>
                   </tr>
-               </table>
-               <table cellspacing="0" cellpadding="0" width="600" class="w320 button">
                   <tr>
-                     <td class="free-text" style="padding-top: 30;">
-                         Η αντίστροφη μέτρηση ξεκίνησε…2 ημέρες έμειναν ακόμη!<p>
-                        Για να συνεχίσεις να χρησιμοποιείς το Prosvasis GO  καθώς και <b>να διατηρήσεις τα δεδομένα της
-                           βάσης σου, ενεργοποίησε τη συνδρομή σου!</b>
-                           
+                     <td class="free-text" style="align-items: center; ">
+                          Η αντίστροφη μέτρηση ξεκίνησε… <b>2 ημέρες έμειναν ακόμη! </b>
                      </td>
-                     <td>
-                        <img class="image" src="https://s1marketing.blob.core.windows.net/newsletter/prosvasis/2%20days.png" style="width: 115; padding-bottom: 8; padding-right: 2;">
-                     </td>
-                     
                   </tr>
                </table>
                <table cellspacing="0" cellpadding="0" width="600" class="w320 button">
                   <tr>
-                     <td class="free-text">
-                        H αξία ανανέωσης της
-                         συνδρομής σου είναι <b> @{items('Apply_to_each')['payable']}€</b> (εμπεριέχεται και ο
-                         Φ.Π.Α)
+                     <td class="free-text" style="padding-top: 40; text-align: left;">
+
+                        Για να συνεχίσεις να χρησιμοποιείς το <b>Prosvasis GO</b> καθώς και <b>να διατηρήσεις τα δεδομένα της
+                        βάσης σου, ενεργοποίησε τη συνδρομή σου!</b> <br><br>
+                        H αξία ανανέωσης της συνδρομής σου είναι
+                        <b> @{items('Apply_to_each')['payable']}€</b> (εμπεριέχεται και ο
+                        Φ.Π.Α)
+                     </td>
+                     <td>
+                        <img class="image"
+                           src="https://s1marketing.blob.core.windows.net/newsletter/prosvasis/2%20days.png"
+                           style="width: 115; padding-right: 2;">
+                     </td>
+
+                  </tr>
+               </table>
+               <table cellspacing="0" cellpadding="0" width="600" class="w320 button">
+                  <tr>
+                     <td style="text-align: left; padding-top: 20;">
                         <p>
                            Για την ανανέωση, σου παραθέτουμε παρακάτω τους τρόπους πληρωμής της συνδρομής σου:
-                           
-                        <p><b>• Με κωδικό ηλεκτρονικής πληρωμής </b>
+
+
                         <p>
-                        <p><b>ΚΩΔΙΚΟΣ ΠΛΗΡΩΜΗΣ </b>
-                           <input type="text" id="fname" name="fname" style="background-color:#fdfdfd"><br><br>
-                        <p>
+
                         <p><b>• Με πιστωτική/χρεωστική κάρτα</b>
+                        <p>Πάτησε <a href="www.in.gr"><u style="color: #ff0000;"><b>εδώ</b></u> </a> για γρήγορη και με
+                           ασφάλεια πληρωμή της συνδρομής σου, χρησιμοποιώντας την
+                           πιστωτική ή χρεωστική κάρτα σου
                         <p>
+
                         <p>
-                           <img class="image" src="https://s1marketing.blob.core.windows.net/newsletter/prosvasis/payment.png" style="width:300;">
+                           <img class="image"
+                              src="https://s1marketing.blob.core.windows.net/newsletter/prosvasis/payment.png"
+                              style="width:300;">
                         <p>
+                           <br>
                         <p><b>• Με την υπηρεσία OnePay</b>
                         <p>
                         <p>Επέλεξε την υπηρεσία για εύκολη, γρήγορη και με ασφάλεια πληρωμή της συνδρομής σου,
                            χρησιμοποιώντας μόνο τον κωδικό (RF) που αναγράφεται στο τιμολόγιο.
                         <p>
+                        <p><b>ΚΩΔΙΚΟΣ ΠΛΗΡΩΜΗΣ </b>
+                           <input type="text" id="fname" name="fname" style="background-color:#fdfdfd"><br><br>
+                        <p>
+
                         <p><b>• Με κατάθεση στους τραπεζικούς μας λογαριασμούς:</b>
                         <p>
                         <p>
@@ -261,9 +276,10 @@
                            ΤΡΑΠΕΖΑ ΠΕΙΡΑΙΩΣ <br> IBAN: GR3801715610006561106971998 (PROSVASIS AEBE) <br><br>
                            ALPHA BANK <br> IBAN: GR1901401370137002002014155 (PROSVASIS AEBE)<br><br><br>
                            ΠΡΟΣΟΧΗ! <br><br>
-                           <b>Απαραίτητη προϋπόθεση</b>, η συμπλήρωση <br>της <b>επωνυμίας</b> και του
+                           <b>Απαραίτητη προϋπόθεση</b>, εάν επιλέξεις σαν τρόπο πληρωμής την κατάθεση σε τράπεζα, η
+                           συμπλήρωση της <b>επωνυμίας</b> και του
                            <b>Α.Φ.Μ.</b> <br><br>
-                           Να θυμάσαι ανά πάσα στιγμή είμαστε δίπλα σου! <br><br>
+                      
                            Η ομάδα του <b>Prosvasis GO</b>
                      </td>
                   </tr>
