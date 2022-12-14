@@ -244,91 +244,48 @@
                         <p>
                            Για την ανανέωση, σου παραθέτουμε παρακάτω τους τρόπους πληρωμής της συνδρομής σου:
 
-
-                        <p>
-
-                           <p><b>• Με πιστωτική/χρεωστική κάρτα ή με την υπηρεσία OnePay</b><p></p>
-                              <table>
-                                 <tr>
-                                    <td style="padding-right: 5;">
-                                       <p>Πάτησε
-                                    </td>
-                                    <td  style="padding-right: 5;">
-                                       <a href="@{variables('RFURL')}"><img width="90" class="image"
-                                          src="https://s1marketing.blob.core.windows.net/newsletter/prosvasis/icons%20email/one-pay-button.png"
-                                          style="width:90;"> </a>
-                                    </td> 
-                                    <!-- <td>
-                                        ή 
-                                    </td>
-                                    <td>
-                                       <a href="link here"><img class="image"
-                                          src="https://s1marketing.blob.core.windows.net/newsletter/prosvasis/icons%20email/card_payment.png"
-                                          style="width:90;"> </a>
-                                    </td> -->
-                                    <td style="text-align: left; padding-top: 0;">
-                                       για πληρωμή <b> @{items('Apply_to_each')['payable']}€</b>
-                                    </td>
-                                    
-                                 </tr>
-                                   
-                              </table>
-                                 <!-- <p>
-                                    <img class="image"
-                                       src="https://s1marketing.blob.core.windows.net/newsletter/prosvasis/payment.png"
-                                       style="width:300;">
-                                    <p> -->
-                                 <br>
-                              <p><b>• Με κατάθεση στους τραπεζικούς μας λογαριασμούς:</b>
-                              <p>
-                              <p>
-                                 <table>
-                                    <tr>
-                                       <td>
-                                          <img width = "60" class="image"
-                                             src="https://s1marketing.blob.core.windows.net/newsletter/prosvasis/icons%20email/nbg-logo.png"
-                                             style="width:60;">
-                                       </td>
-                                       <td style="text-align: left; padding-left: 10; padding-top: 10;">
-                                          <b>ΕΘΝΙΚΗ ΤΡΑΠΕΖΑ</b> <br> IBAN: GR7601101220000012247022127 (PROSVASIS AEBE)<br><br>
-                                       </td>
-                                    </tr>
-                                    <tr>
-                                       <td style="padding-top: 10;">
-                                          <img width = "50" class="image" src="https://s1marketing.blob.core.windows.net/newsletter/prosvasis/icons%20email/trapeza_peireos-logo.png"
-                                             style="width:50;">
-                                       </td>
-                                       <td style="text-align: left; padding-left: 10; padding-top: 20;">
-                                          <b>ΤΡΑΠΕΖΑ ΠΕΙΡΑΙΩΣ</b> <br> IBAN: GR3801715610006561106971998 (PROSVASIS AEBE)
-                                          <br><br>
-                                       </td>
-                                    </tr>
-                                    <tr>
-                                       <td style="padding-top: 10;">
-                                          <img width="50"  class="image"
-                                             src="https://s1marketing.blob.core.windows.net/newsletter/prosvasis/icons%20email/alpha-bank-logo.png"
-                                             style="width:50;">
-                                       </td>
-                                       <td  style="text-align: left; padding-left: 10; padding-top: 12;">
-                                          <b>ALPHA BANK</b> <br> IBAN: GR1901401370137002002014155 (PROSVASIS AEBE)<br><br>
-                                       </td>
-                                    </tr>
-                                    <tr>
-                                       <td  style="padding-top: 0;">
-                                          <img width="50" class="image"
-                                             src="https://s1marketing.blob.core.windows.net/newsletter/prosvasis/icons%20email/Eurobank_2021-logo.png"
-                                             style="width:50;">
-                                       </td>
-                                       <td style="text-align: left; padding-left: 10; padding-top: 15;">
-                                          <b>EUROBANK</b> <br> IBAN: GR8702601800000950200104470 (PROSVASIS AEBE) <br><br>
-                                       </td>
-                                    </tr>
-                                 </table>
+                           <p><strong>Τρόποι πληρωμής</strong></p>
+                           <table style="border-collapse: separate !important; border-spacing: 5px; margin-bottom: 20px;">
+                              <tr>
+                                 <td width="200" style="background-color: #f0f0f0; border: 1px solid #e7e7e7; padding: 5px; vertical-align: top;">
+                                    <div style="font-weight: 600; margin-bottom: 10px;">Κωδικός Ηλεκτρονικής Πληρωμής</div>
+                                    <div style="font-size: 9pt;font-weight: 600;">@{items('Apply_to_each')['rfcode']}</div>
+                                    <img src="https://api.qrserver.com/v1/create-qr-code/?data=@{variables('RFURL')}&amp;size=80x80" alt="" style="border: 0;">
+                                    <div style="white-space: nowrap; font-size: 9pt;">Σκανάρετε για άμεση εξόφληση</div>
+                                 </td>
+                                 <td width="200" style="background-color: #f0f0f0; border: 1px solid #e7e7e7; padding: 5px; vertical-align: top;">
+                                    <div style="font-weight: 600; margin-bottom: 20px;">Υπηρεσία OnePay ή IRIS</div>
+                                    <div style="margin-bottom: 5px;">Πατήστε:</div>
+                                    <a href="@{variables('RFURL')}" target="_blank" style="display: block; margin-bottom: 10px;">
+                                       <img width="150" src="https://s1marketing.blob.core.windows.net/newsletter/prosvasis/icons%20email/one-pay-button.png" style="height:30pt;">
+                                    </a>
+                                    <div style="margin-bottom: 5px;">---------------------</div>
+                                    <!-- <a href="https://fintech.softone.gr/ui/ONEPAY.html?rf=RF58914736150228436851885" target="_blank"> -->
+                                       <img width="100" src="https://s1marketing.blob.core.windows.net/newsletter/prosvasis/IRIS.png" style="height:30pt;" >
+                                    </a>
+                                 </td>
+                                 <td width="200" style="background-color: #f0f0f0; border: 1px solid #e7e7e7; padding: 5px; vertical-align: top;">
+                                    <div style="font-weight: 600; margin-bottom: 3px;">Πιστωτική/Χρεωστική κάρτα</div>
+                                    <br> <div style="margin-bottom: 5px; margin-top: -30;"><br>Πατήστε:</div>
+                                    <div>
+                                       <a href="https://fintech.softone.gr/ui/everypay.html?acc=14&code=@{items('Apply_to_each')['rfcode']}&am=@{items('Apply_to_each')['payable']}&redirUrl=https://go.s1cloud.net/web/everypay.html" style="display: block; margin-bottom: 0px;">
+                                          <img src="https://s1marketing.blob.core.windows.net/newsletter/prosvasis/everypay.png" style="height:30pt;">
+                                       </a>
+                                       <div style="margin-bottom: 5px;">---------------------------</div>
+                                       <img src="https://s1marketing.blob.core.windows.net/newsletter/prosvasis/payment-cards.png" style="width: 190px;">
+                                    </div>
+                                 </td>
+                              </tr>
+                           </table>
+                           <p>
+                              <div style="font-weight: 600; margin-bottom: 5px;">Κατάθεση στους τραπεζικούς μας λογαριασμούς:</div>
+                              Πατήστε <a style="font-weight: bold; text-decoration: underline;" href="https://go.prosvasis.com/%CE%BF%CF%81%CE%BF%CE%B9-%CF%87%CF%81%CE%B7%CF%83%CE%B7%CF%83/#transactions" target="_blank"><u>εδώ</u></a> για να δείτε τους τραπεζικούς λογαριασμούς
+                           </p>
                              <br><a style="color:#ff0000;">ΠΡΟΣΟΧΗ!</a><br>
                              <b>Απαραίτητη προϋπόθεση</b>, εάν επιλέξεις σαν τρόπο πληρωμής την κατάθεση σε τράπεζα, η
                              συμπλήρωση της <b>επωνυμίας</b> και του
                              <b>Α.Φ.Μ.</b> <br><br>
-                      
+                           Μην ξεχνάς ότι είμαστε δίπλα σου για ό,τι χρειαστείς! <br><br>
                            Η ομάδα του <b>Prosvasis GO</b>
                      </td>
                   </tr>
